@@ -1,0 +1,60 @@
+:root {
+    --main: #f6eaf5;
+  }
+  
+  
+  html {
+    height: 100%;
+    width: 100%;
+    font-family: "Oblegg";
+    background-color: var(--main);
+  }
+  
+  @font-face {
+    font-family: "velishin";
+    src: url("Velishin-Script-Regular.otf") format("opentype");
+  }
+  
+  @font-face {
+    font-family: "Oblegg";
+    src: url("Oblegg-Regular.otf") format("opentype");
+  }
+  
+  div {
+    position: absolute;
+    height: 80dvw;
+    max-height: 80dvw;
+    top: 10dvh;
+    aspect-ratio: 1/1;
+    border-radius: 5px;
+    border-color: var(--main);
+    background-color: var(--main);
+    left: 20dvw;
+  
+  
+  }
+  
+  textarea {
+    background: url(https://www.worldanvil.com/uploads/images/1fea3f76e20423fa5282e0cf246c0b36.jpg);
+    font-family: "velishin";
+    padding: 15px;
+    resize: none;
+    width: 55dvw;
+    height: 55dvh;
+    max-height: 80dvw;
+    font-size: 3rem;
+    margin: 5%;
+    writing-mode: vertical-lr;
+    transform: rotate(-90deg);
+    text-wrap: wrap;
+    font-variant-ligatures: discretionary-ligatures;
+    border: none;
+  }
+  
+  textarea::placeholder {
+    color: black;
+  }
+  
+  label {
+    user-select: none;
+  }
