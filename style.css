@@ -34,7 +34,7 @@
     resize: none;
     width: 90dvh;
     height: 90dvw;
-    font-size: 3rem;
+    font-size: 2rem;
     writing-mode: vertical-lr;
     transform: rotate(-90deg) /*translateX(45dvh)*/;
     text-wrap: wrap;
