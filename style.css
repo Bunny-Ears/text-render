@@ -8,6 +8,7 @@
     width: 100%;
     font-family: "Oblegg";
     background-color: var(--main);
+    accent-color: #dac9ad;
   }
   
   @font-face {
@@ -20,35 +21,26 @@
     src: url("Oblegg-Regular.otf") format("opentype");
   }
   
-  div {
-    position: absolute;
-    height: 80dvw;
-    max-height: 80dvw;
-    top: 10dvh;
-    aspect-ratio: 1/1;
-    border-radius: 5px;
-    border-color: var(--main);
-    background-color: var(--main);
-    left: 20dvw;
   
-  
-  }
   
   textarea {
+
+    margin: auto;
+    padding-left: 1%;
+    display: grid;
+    justify-content: center;
     background: url(https://www.worldanvil.com/uploads/images/1fea3f76e20423fa5282e0cf246c0b36.jpg);
     font-family: "velishin";
-    padding: 15px;
     resize: none;
-    width: 55dvw;
-    height: 55dvh;
-    max-height: 80dvw;
+    width: 90dvh;
+    height: 90dvw;
     font-size: 3rem;
-    margin: 5%;
     writing-mode: vertical-lr;
-    transform: rotate(-90deg);
+    transform: rotate(-90deg) /*translateX(45dvh)*/;
     text-wrap: wrap;
     font-variant-ligatures: discretionary-ligatures;
     border: none;
+
   }
   
   textarea::placeholder {
@@ -58,3 +50,15 @@
   label {
     user-select: none;
   }
+
+#container {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  height: 60vh; 
+}
+#sticky {
+  z-index: 2;
+  position: sticky;
+  top: 5px;
+}

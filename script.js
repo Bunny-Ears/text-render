@@ -4,14 +4,25 @@ const vs = document.querySelector('#vs');
 const text = document.querySelector("textarea");
 const spell = document.querySelector("#spell");
 const bg = document.querySelector("#bg");
+const cont = document.querySelector("#container");
 
 btt.addEventListener("change",() => {
   if (btt.checked) {
     text.style.writingMode = "vertical-lr";
-    text.style.transform = "rotate(-90deg)";  
+    text.style.transform = "rotate(-90deg)";
+    cont.style.display = "flex"; 
+    text.style.margin = "auto";
+    text.style.width = "90dvh";
+    text.style.height = "90dvw";
+    
   } else {
     text.style.writingMode = "inherit";
-    text.style.transform = "rotate(0deg)";
+    text.style.transform = "none";
+    text.style.margin = "10dvw";
+    text.style.width = "80dvw";
+    text.style.height = "80dvh";
+    text.style.marginTop = "3cap";
+    cont.style.display = "inherit";
   }
   
 });
