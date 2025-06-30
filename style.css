@@ -1,5 +1,5 @@
 :root {
-    --main: #f6eaf5;
+    --main: #f6eaf500;
   }
   
   
@@ -26,6 +26,7 @@
   textarea {
     margin: auto;
     padding-left: 1%;
+    padding-top: 1%;
     display: grid;
     justify-content: center;
     background: url(https://www.worldanvil.com/uploads/images/1fea3f76e20423fa5282e0cf246c0b36.jpg);
@@ -39,6 +40,7 @@
     text-wrap: wrap;
     font-variant-ligatures: discretionary-ligatures;
     border: none;
+    border-radius: 10px;
 
   }
   
